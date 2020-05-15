@@ -1,8 +1,8 @@
 <template>
-    <div class="Developers-container Developers">
+    <div class="developers-container Developers">
         <div>
             <div class="portlet">
-                <div class="Developers__header"  > 
+                <div class="developers__header"  > 
                     <h3> Developers</h3>
                 </div>
                 <div class="Developers__buttons--create">
@@ -98,7 +98,6 @@
                             <span class="error-message" >{{error}}</span>
                         </div>
                      </label>
-                     
                       <label class="modal__input--label">
                         <b-input v-model="editForm.password" type="password" placeholder="Password"></b-input>
                         <div class="error-message-container" v-for="(error,index) in errorsPassword" :key="index">
@@ -235,14 +234,15 @@
 
     }
 </script>
+
 <style lang="scss">
-.Developers-container {
+.developers-container {
     padding: 20px;
-    .Developers__header {
+    .developers__header {
         display: flex;
         justify-content: center;
     }
-    .Developers__buttons--create {
+    .developers__buttons--create {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 20px;

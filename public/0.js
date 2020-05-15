@@ -131,7 +131,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {},
@@ -240,7 +239,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".Developers-container {\n  padding: 20px;\n}\n.Developers-container .Developers__header {\n  display: flex;\n  justify-content: center;\n}\n.Developers-container .Developers__buttons--create {\n  display: flex;\n  justify-content: flex-end;\n  margin-bottom: 20px;\n}\n.Developers-container .Developers__buttons--create button {\n  background-color: darkgreen;\n  color: white;\n}\n.error-message {\n  font-size: 10px;\n  color: #a52727;\n}\n.error-message-container {\n  display: flex;\n  flex-direction: column;\n}\n.cursor-pointer {\n  cursor: pointer;\n}\n.button--change {\n  background-color: brown;\n  color: white;\n}\n.modal-content {\n  display: flex;\n  flex-direction: column;\n  border: none;\n}\n.modal-content .modal__input--label {\n  margin-bottom: 20px;\n  width: 100%;\n}\n.modal-content .modal-content__footer {\n  border: none;\n  margin-top: 30px;\n  display: flex;\n  justify-content: space-between;\n}\n.modal-content .modal-content__footer .btn--create {\n  background-color: #277a53;\n  color: white;\n}\n.modal-content .modal-content__footer .btn--cancel {\n  background-color: crimson;\n  color: white;\n}", ""]);
+exports.push([module.i, ".developers-container {\n  padding: 20px;\n}\n.developers-container .developers__header {\n  display: flex;\n  justify-content: center;\n}\n.developers-container .developers__buttons--create {\n  display: flex;\n  justify-content: flex-end;\n  margin-bottom: 20px;\n}\n.developers-container .developers__buttons--create button {\n  background-color: darkgreen;\n  color: white;\n}\n.error-message {\n  font-size: 10px;\n  color: #a52727;\n}\n.error-message-container {\n  display: flex;\n  flex-direction: column;\n}\n.cursor-pointer {\n  cursor: pointer;\n}\n.button--change {\n  background-color: brown;\n  color: white;\n}\n.modal-content {\n  display: flex;\n  flex-direction: column;\n  border: none;\n}\n.modal-content .modal__input--label {\n  margin-bottom: 20px;\n  width: 100%;\n}\n.modal-content .modal-content__footer {\n  border: none;\n  margin-top: 30px;\n  display: flex;\n  justify-content: space-between;\n}\n.modal-content .modal-content__footer .btn--create {\n  background-color: #277a53;\n  color: white;\n}\n.modal-content .modal-content__footer .btn--cancel {\n  background-color: crimson;\n  color: white;\n}", ""]);
 
 // exports
 
@@ -294,7 +293,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "Developers-container Developers" },
+    { staticClass: "developers-container Developers" },
     [
       _c("div", [
         _c("div", { staticClass: "portlet" }, [
@@ -687,7 +686,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "Developers__header" }, [
+    return _c("div", { staticClass: "developers__header" }, [
       _c("h3", [_vm._v(" Developers")])
     ])
   },
