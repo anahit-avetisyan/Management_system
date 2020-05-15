@@ -1,0 +1,24 @@
+.modal-content {
+    display:flex;
+    flex-direction: column;
+    border: none;
+    .modal__input--label {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .modal-content__footer {
+        border: none;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .btn--create {
+             background-color: rgb(39, 122, 83);
+             color: white;
+            
+        }
+         .btn--cancel {
+           background-color: crimson;
+            color: white;
+        }
+    }
+}
