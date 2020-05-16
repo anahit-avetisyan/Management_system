@@ -1,5 +1,5 @@
 <template>
-    <div class="developers-container Developers">
+    <div class="developers-container developers">
         <div>
             <div class="portlet">
                 <div class="developers__header"  > 
@@ -145,8 +145,6 @@
                 errorsPassword:[],
                 errorsEmail:[],
                 errorsName:[]
-                 
-
             }
         },
 
