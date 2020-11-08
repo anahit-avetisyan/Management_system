@@ -2,7 +2,7 @@
     <div class="tasks-container tasks">
         <div>
             <div class="portlet">
-                <div class="tasks__header"  > 
+                <div class="tasks__header"  >
                     <h3> Tasks</h3>
                 </div>
                 <div class="tasks__buttons--create">
@@ -50,7 +50,7 @@
                                             <span  @click="editTaskOpenModal(task)"><i class="fa fa-edit cursor-pointer"></i></span>
                                             <span @click="deleteTask(task.id)"><i  class="fa fa-trash cursor-pointer"></i> </span>
                                         </div>
-                                      
+
                                         <button v-if="user && user.role && user.role.name=='Developer'" @click="changeStatusOpenModal(task)" class="button--change btn">Change status</button>
                                     </td>
                                 </tr>
@@ -76,7 +76,7 @@
                          </template>
                      </b-form-select>
                      </label>
-                    
+
                  </div>
                  <div class="modal-content__footer">
                      <button @click="createTask" :disabled="form.task==''?true:false" class="btn btn--create">Create</button>
@@ -99,7 +99,7 @@
                             <b-form-select-option :key="index" :value='developer.id'>{{developer.name}}</b-form-select-option>
                          </template>
                      </b-form-select>
-                     </label>   
+                     </label>
                  </div>
                  <div class="modal-content__footer">
                      <button @click="editTask" :disabled="editForm.task==''?true:false" class="btn btn--create">Update</button>
@@ -117,7 +117,7 @@
                                 <b-form-select-option :key="index" :value='status.id'>{{status.name}}</b-form-select-option>
                             </template>
                      </b-form-select>
-                     </label>   
+                     </label>
                  </div>
                  <div class="modal-content__footer">
                      <button @click="changeStatus"  class="btn btn--create">Change</button>
@@ -140,7 +140,7 @@
         data () {
             return {
                 createTaskModal:false,
-                
+
                 form:{
                     task:'',
                     developer_id:''
@@ -154,9 +154,9 @@
                     status_id:'',
                     id:''
                 },
-            
+
                 changeStatusModal:false,
-                 
+
 
             }
         },
@@ -173,6 +173,7 @@
         },
 
         mounted () {
+            console.log('dddd')
               this.$store.dispatch('tasks/fetchTasks')
               this.$store.dispatch('tasks/fetchStatuses')
               this.$store.dispatch('auth/fetchUser')
@@ -213,7 +214,7 @@
                  this.changeStatusModal=true
              },
              changeStatus(){
-                 
+
                 this.$store.dispatch('tasks/fetchChangeStatus',this.statusForm)
                 this.changeStatusModal=false
              }
@@ -263,7 +264,7 @@
         .btn--create {
              background-color: rgb(39, 122, 83);
              color: white;
-            
+
         }
          .btn--cancel {
            background-color: crimson;
